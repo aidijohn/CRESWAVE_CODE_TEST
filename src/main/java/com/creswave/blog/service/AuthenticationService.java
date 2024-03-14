@@ -5,12 +5,13 @@ import com.creswave.blog.dto.RefreshTokenRequest;
 import com.creswave.blog.dto.SignInRequest;
 import com.creswave.blog.dto.SignUpRequest;
 import com.creswave.blog.model.User;
+import org.springframework.http.ResponseEntity;
 
 public interface AuthenticationService {
 
-    User signup(SignUpRequest signUpRequest);
+    ResponseEntity<?> signup(SignUpRequest signUpRequest);
 
-    JwtAuthenticationResponse signin(SignInRequest signInRequest);
+    ResponseEntity<?> signin(SignInRequest signInRequest);
 
     JwtAuthenticationResponse refreshToken(RefreshTokenRequest refreshTokenRequest);
 }

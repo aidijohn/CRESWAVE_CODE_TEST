@@ -4,7 +4,6 @@ import com.creswave.blog.dto.JwtAuthenticationResponse;
 import com.creswave.blog.dto.RefreshTokenRequest;
 import com.creswave.blog.dto.SignInRequest;
 import com.creswave.blog.dto.SignUpRequest;
-import com.creswave.blog.model.User;
 import com.creswave.blog.service.AuthenticationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -22,13 +21,13 @@ public class AuthenticationController {
 
 
     @PostMapping("/signup")
-    public ResponseEntity<User> signup(@RequestBody SignUpRequest signUpRequest) {
+    public ResponseEntity<ResponseEntity<?>> signup(@RequestBody SignUpRequest signUpRequest) {
         return ResponseEntity.ok(authenticationService.signup(signUpRequest));
     }
 
     @PostMapping("/signin")
-    public ResponseEntity<JwtAuthenticationResponse> signin(@RequestBody SignInRequest signInRequest) {
-        return ResponseEntity.ok(authenticationService.signin(signInRequest));
+    public ResponseEntity<?> signin(@RequestBody SignInRequest signInRequest) {
+        return authenticationService.signin(signInRequest);
     }
 
     @PostMapping("/refresh")
