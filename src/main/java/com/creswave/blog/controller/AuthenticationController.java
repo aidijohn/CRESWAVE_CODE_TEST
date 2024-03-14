@@ -1,5 +1,8 @@
 package com.creswave.blog.controller;
 
+import com.creswave.blog.dto.JwtAuthenticationResponse;
+import com.creswave.blog.dto.RefreshTokenRequest;
+import com.creswave.blog.dto.SignInRequest;
 import com.creswave.blog.dto.SignUpRequest;
 import com.creswave.blog.model.User;
 import com.creswave.blog.service.AuthenticationService;
@@ -21,5 +24,15 @@ public class AuthenticationController {
     @PostMapping("/signup")
     public ResponseEntity<User> signup(@RequestBody SignUpRequest signUpRequest) {
         return ResponseEntity.ok(authenticationService.signup(signUpRequest));
+    }
+
+    @PostMapping("/signin")
+    public ResponseEntity<JwtAuthenticationResponse> signin(@RequestBody SignInRequest signInRequest) {
+        return ResponseEntity.ok(authenticationService.signin(signInRequest));
+    }
+
+    @PostMapping("/refresh")
+    public ResponseEntity<JwtAuthenticationResponse> refresh(@RequestBody RefreshTokenRequest refreshTokenRequest) {
+        return ResponseEntity.ok(authenticationService.refreshToken(refreshTokenRequest));
     }
 }
