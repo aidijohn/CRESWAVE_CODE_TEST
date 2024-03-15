@@ -1,0 +1,498 @@
+2024-03-15T15:43:22.065+03:00  INFO 3580 --- [blog] [main] com.creswave.blog.BlogApplication        : Starting BlogApplication using Java 21.0.2 with PID 3580 (C:\Users\PC\Desktop\SBOOT\blog\target\classes started by PC in C:\Users\PC\Desktop\SBOOT\blog)
+2024-03-15T15:43:22.069+03:00  INFO 3580 --- [blog] [main] com.creswave.blog.BlogApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T15:43:23.505+03:00  INFO 3580 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T15:43:23.626+03:00  INFO 3580 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 3 JPA repository interfaces.
+2024-03-15T15:43:24.427+03:00  INFO 3580 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T15:43:24.442+03:00  INFO 3580 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T15:43:24.443+03:00  INFO 3580 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T15:43:24.556+03:00  INFO 3580 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15T15:43:24.557+03:00  INFO 3580 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2395 ms
+2024-03-15T15:43:25.211+03:00  INFO 3580 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T15:43:25.251+03:00  INFO 3580 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T15:43:25.401+03:00  INFO 3580 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7f6b57f2
+2024-03-15T15:43:25.404+03:00  INFO 3580 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T15:43:27.094+03:00  INFO 3580 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T15:43:27.786+03:00  WARN 3580 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T15:43:28.025+03:00 DEBUG 3580 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2024-03-15T15:43:29.142+03:00 DEBUG 3580 --- [blog] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-03-15T15:43:29.195+03:00  INFO 3580 --- [blog] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3984e2b3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35bb3fea, org.springframework.security.web.context.SecurityContextHolderFilter@4ebd0b52, org.springframework.security.web.header.HeaderWriterFilter@59ac60d1, org.springframework.web.filter.CorsFilter@7f82a71f, org.springframework.security.web.authentication.logout.LogoutFilter@419c70f6, com.creswave.blog.config.JWTAuthenticationFilter@5b16e486, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@110f66e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77e64a46, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a0df38e, org.springframework.security.web.session.SessionManagementFilter@549fe529, org.springframework.security.web.access.ExceptionTranslationFilter@64f1b2fb, org.springframework.security.web.access.intercept.AuthorizationFilter@57fb6900]
+2024-03-15T15:43:29.318+03:00 DEBUG 3580 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15T15:43:29.374+03:00 DEBUG 3580 --- [blog] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15T15:43:29.714+03:00  INFO 3580 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-15T15:43:29.728+03:00  INFO 3580 --- [blog] [main] com.creswave.blog.BlogApplication        : Started BlogApplication in 8.43 seconds (process running for 9.772)
+2024-03-15T15:44:23.043+03:00  INFO 3580 --- [blog] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T15:44:23.044+03:00  INFO 3580 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T15:44:23.044+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15T15:44:23.044+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15T15:44:23.044+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15T15:44:23.047+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5eaa4ed0
+2024-03-15T15:44:23.048+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3aae9e8f
+2024-03-15T15:44:23.049+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15T15:44:23.049+03:00  INFO 3580 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-03-15T15:44:23.086+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/signin", parameters={}
+2024-03-15T15:44:23.089+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.AuthenticationController#signin(SignInRequest)
+2024-03-15T15:44:23.199+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignInRequest(email=admin@gmail.com, password=admin)]
+2024-03-15T15:44:23.603+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T15:44:23.604+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [JwtAuthenticationResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA (truncated)...]
+2024-03-15T15:44:23.616+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T15:44:51.379+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getAllPosts", parameters={}
+2024-03-15T15:44:51.379+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getAllPosts(Integer, Integer)
+2024-03-15T15:44:51.442+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T15:44:51.567+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PagedResponse(content=[Post(id=2, title=Food Farming2, body=22222Food farming in Kenya is a very imp (truncated)...]
+2024-03-15T15:44:51.582+03:00 DEBUG 3580 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:07:45.072+03:00  INFO 3580 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:07:45.075+03:00  INFO 3580 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T16:07:45.088+03:00  INFO 3580 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15T16:07:58.570+03:00  INFO 14168 --- [blog] [main] com.creswave.blog.BlogApplication        : Starting BlogApplication using Java 21.0.2 with PID 14168 (C:\Users\PC\Desktop\SBOOT\blog\target\classes started by PC in C:\Users\PC\Desktop\SBOOT\blog)
+2024-03-15T16:07:58.575+03:00  INFO 14168 --- [blog] [main] com.creswave.blog.BlogApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T16:07:59.976+03:00  INFO 14168 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T16:08:00.104+03:00  INFO 14168 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 3 JPA repository interfaces.
+2024-03-15T16:08:00.822+03:00  INFO 14168 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T16:08:00.837+03:00  INFO 14168 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T16:08:00.838+03:00  INFO 14168 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T16:08:00.939+03:00  INFO 14168 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15T16:08:00.940+03:00  INFO 14168 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2269 ms
+2024-03-15T16:08:01.624+03:00  INFO 14168 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T16:08:01.662+03:00  INFO 14168 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T16:08:01.818+03:00  INFO 14168 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ee77baf
+2024-03-15T16:08:01.819+03:00  INFO 14168 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T16:08:03.516+03:00  INFO 14168 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:08:04.232+03:00  WARN 14168 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T16:08:04.487+03:00 DEBUG 14168 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-03-15T16:08:05.616+03:00 DEBUG 14168 --- [blog] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-03-15T16:08:05.668+03:00  INFO 14168 --- [blog] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@153cf928, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4884350b, org.springframework.security.web.context.SecurityContextHolderFilter@6a887649, org.springframework.security.web.header.HeaderWriterFilter@2bd8c8f1, org.springframework.web.filter.CorsFilter@53cba89f, org.springframework.security.web.authentication.logout.LogoutFilter@259ae1a9, com.creswave.blog.config.JWTAuthenticationFilter@1784a296, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27ada0e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62fa4a88, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66ad7167, org.springframework.security.web.session.SessionManagementFilter@190cc39e, org.springframework.security.web.access.ExceptionTranslationFilter@7a90f33d, org.springframework.security.web.access.intercept.AuthorizationFilter@1f7853af]
+2024-03-15T16:08:05.783+03:00 DEBUG 14168 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15T16:08:05.844+03:00 DEBUG 14168 --- [blog] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15T16:08:06.187+03:00  INFO 14168 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-15T16:08:06.201+03:00  INFO 14168 --- [blog] [main] com.creswave.blog.BlogApplication        : Started BlogApplication in 8.467 seconds (process running for 9.77)
+2024-03-15T16:11:56.377+03:00  INFO 14168 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T16:11:56.378+03:00  INFO 14168 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T16:11:56.378+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15T16:11:56.378+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15T16:11:56.379+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15T16:11:56.380+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4d25943d
+2024-03-15T16:11:56.381+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4807b2b7
+2024-03-15T16:11:56.381+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15T16:11:56.381+03:00  INFO 14168 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-03-15T16:11:56.418+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/signin", parameters={}
+2024-03-15T16:11:56.420+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.AuthenticationController#signin(SignInRequest)
+2024-03-15T16:11:56.522+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignInRequest(email=admin@gmail.com, password=admin)]
+2024-03-15T16:11:56.932+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:11:56.933+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [JwtAuthenticationResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA (truncated)...]
+2024-03-15T16:11:56.946+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:12:22.747+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/1", parameters={}
+2024-03-15T16:12:22.749+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long)
+2024-03-15T16:12:22.802+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:12:22.803+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PostResponse(title=null, body=null, message=null)]
+2024-03-15T16:12:22.806+03:00 DEBUG 14168 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:14:31.636+03:00  INFO 14168 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:14:31.639+03:00  INFO 14168 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T16:14:31.649+03:00  INFO 14168 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15T16:14:40.379+03:00  INFO 10728 --- [blog] [main] com.creswave.blog.BlogApplication        : Starting BlogApplication using Java 21.0.2 with PID 10728 (C:\Users\PC\Desktop\SBOOT\blog\target\classes started by PC in C:\Users\PC\Desktop\SBOOT\blog)
+2024-03-15T16:14:40.383+03:00  INFO 10728 --- [blog] [main] com.creswave.blog.BlogApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T16:14:41.985+03:00  INFO 10728 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T16:14:42.130+03:00  INFO 10728 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 3 JPA repository interfaces.
+2024-03-15T16:14:42.934+03:00  INFO 10728 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T16:14:42.951+03:00  INFO 10728 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T16:14:42.952+03:00  INFO 10728 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T16:14:43.039+03:00  INFO 10728 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15T16:14:43.040+03:00  INFO 10728 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2563 ms
+2024-03-15T16:14:43.797+03:00  INFO 10728 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T16:14:43.832+03:00  INFO 10728 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T16:14:43.992+03:00  INFO 10728 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a5e8260
+2024-03-15T16:14:43.995+03:00  INFO 10728 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T16:14:45.693+03:00  INFO 10728 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:14:46.417+03:00  WARN 10728 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T16:14:46.664+03:00 DEBUG 10728 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-03-15T16:14:47.787+03:00 DEBUG 10728 --- [blog] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-03-15T16:14:47.838+03:00  INFO 10728 --- [blog] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1174ff02, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1978eab7, org.springframework.security.web.context.SecurityContextHolderFilter@7f82a71f, org.springframework.security.web.header.HeaderWriterFilter@6a887649, org.springframework.web.filter.CorsFilter@49dacc93, org.springframework.security.web.authentication.logout.LogoutFilter@2c56e044, com.creswave.blog.config.JWTAuthenticationFilter@1822a61b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64821706, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8aa3013, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@dd025d9, org.springframework.security.web.session.SessionManagementFilter@3f0751b0, org.springframework.security.web.access.ExceptionTranslationFilter@4a2f1ae3, org.springframework.security.web.access.intercept.AuthorizationFilter@4a985388]
+2024-03-15T16:14:47.953+03:00 DEBUG 10728 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15T16:14:48.009+03:00 DEBUG 10728 --- [blog] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15T16:14:48.367+03:00  INFO 10728 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-15T16:14:48.381+03:00  INFO 10728 --- [blog] [main] com.creswave.blog.BlogApplication        : Started BlogApplication in 8.798 seconds (process running for 10.096)
+2024-03-15T16:15:03.392+03:00  INFO 10728 --- [blog] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T16:15:03.393+03:00  INFO 10728 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T16:15:03.393+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15T16:15:03.393+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15T16:15:03.393+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15T16:15:03.394+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@54644470
+2024-03-15T16:15:03.395+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@366c9912
+2024-03-15T16:15:03.395+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15T16:15:03.396+03:00  INFO 10728 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-03-15T16:15:03.436+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/signin", parameters={}
+2024-03-15T16:15:03.438+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.AuthenticationController#signin(SignInRequest)
+2024-03-15T16:15:03.545+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignInRequest(email=admin@gmail.com, password=admin)]
+2024-03-15T16:15:03.954+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:15:03.955+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [JwtAuthenticationResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA (truncated)...]
+2024-03-15T16:15:03.969+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:15:22.531+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/1", parameters={}
+2024-03-15T16:15:22.531+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long)
+2024-03-15T16:15:22.584+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:15:22.584+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PostResponse(title=null, body=null, message=null)]
+2024-03-15T16:15:22.586+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:15:46.180+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/2", parameters={}
+2024-03-15T16:15:46.181+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long)
+2024-03-15T16:15:46.185+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:15:46.185+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PostResponse(title=null, body=null, message=null)]
+2024-03-15T16:15:46.187+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:17:19.424+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostsByUserId/1", parameters={}
+2024-03-15T16:17:19.425+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostsByUserId(Long, Integer, Integer)
+2024-03-15T16:17:19.487+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:17:19.505+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PagedResponse(content=[Post(id=2, title=Food Farming2, body=22222Food farming in Kenya is a very imp (truncated)...]
+2024-03-15T16:17:19.513+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:17:45.661+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/2", parameters={}
+2024-03-15T16:17:45.662+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long)
+2024-03-15T16:17:45.665+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:17:45.666+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PostResponse(title=null, body=null, message=null)]
+2024-03-15T16:17:45.667+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:18:51.900+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/2", parameters={}
+2024-03-15T16:18:51.901+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long)
+2024-03-15T16:18:51.906+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:18:51.907+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PostResponse(title=null, body=null, message=null)]
+2024-03-15T16:18:51.908+03:00 DEBUG 10728 --- [blog] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:26:56.157+03:00  INFO 10728 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:26:56.161+03:00  INFO 10728 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T16:26:56.172+03:00  INFO 10728 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15T16:27:05.476+03:00  INFO 13452 --- [blog] [main] com.creswave.blog.BlogApplication        : Starting BlogApplication using Java 21.0.2 with PID 13452 (C:\Users\PC\Desktop\SBOOT\blog\target\classes started by PC in C:\Users\PC\Desktop\SBOOT\blog)
+2024-03-15T16:27:05.480+03:00  INFO 13452 --- [blog] [main] com.creswave.blog.BlogApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T16:27:06.896+03:00  INFO 13452 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T16:27:07.008+03:00  INFO 13452 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+2024-03-15T16:27:07.787+03:00  INFO 13452 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T16:27:07.803+03:00  INFO 13452 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T16:27:07.804+03:00  INFO 13452 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T16:27:07.905+03:00  INFO 13452 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15T16:27:07.906+03:00  INFO 13452 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2331 ms
+2024-03-15T16:27:08.553+03:00  INFO 13452 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T16:27:08.590+03:00  INFO 13452 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T16:27:08.743+03:00  INFO 13452 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a5e8260
+2024-03-15T16:27:08.745+03:00  INFO 13452 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T16:27:10.440+03:00  INFO 13452 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:27:11.139+03:00  WARN 13452 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T16:27:11.393+03:00 DEBUG 13452 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-03-15T16:27:12.506+03:00 DEBUG 13452 --- [blog] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-03-15T16:27:12.557+03:00  INFO 13452 --- [blog] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b235623, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ddc5a75, org.springframework.security.web.context.SecurityContextHolderFilter@1f67d37f, org.springframework.security.web.header.HeaderWriterFilter@715523b8, org.springframework.web.filter.CorsFilter@3b2114ce, org.springframework.security.web.authentication.logout.LogoutFilter@6f51d1cc, com.creswave.blog.config.JWTAuthenticationFilter@66b62332, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57fb6900, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1eda853f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bab8290, org.springframework.security.web.session.SessionManagementFilter@64641998, org.springframework.security.web.access.ExceptionTranslationFilter@a1be5cb, org.springframework.security.web.access.intercept.AuthorizationFilter@7def62d0]
+2024-03-15T16:27:12.672+03:00 DEBUG 13452 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15T16:27:12.727+03:00 DEBUG 13452 --- [blog] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15T16:27:13.081+03:00  INFO 13452 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-15T16:27:13.094+03:00  INFO 13452 --- [blog] [main] com.creswave.blog.BlogApplication        : Started BlogApplication in 8.368 seconds (process running for 9.656)
+2024-03-15T16:27:33.195+03:00  INFO 13452 --- [blog] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T16:27:33.196+03:00  INFO 13452 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T16:27:33.196+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15T16:27:33.196+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15T16:27:33.196+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15T16:27:33.197+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@570089c4
+2024-03-15T16:27:33.198+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@495598c5
+2024-03-15T16:27:33.198+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15T16:27:33.198+03:00  INFO 13452 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-15T16:27:33.235+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/signin", parameters={}
+2024-03-15T16:27:33.237+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.AuthenticationController#signin(SignInRequest)
+2024-03-15T16:27:33.346+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignInRequest(email=admin@gmail.com, password=admin)]
+2024-03-15T16:27:33.771+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:27:33.773+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [JwtAuthenticationResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA (truncated)...]
+2024-03-15T16:27:33.785+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:27:46.482+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/2", parameters={}
+2024-03-15T16:27:46.483+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long)
+2024-03-15T16:27:46.536+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:27:46.536+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PostResponse(id=null, title=null, body=null, message=null)]
+2024-03-15T16:27:46.539+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:30:51.296+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/1", parameters={}
+2024-03-15T16:30:51.297+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long)
+2024-03-15T16:30:51.304+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:30:51.304+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PostResponse(id=null, title=null, body=null, message=null)]
+2024-03-15T16:30:51.305+03:00 DEBUG 13452 --- [blog] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:34:05.552+03:00  INFO 13452 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:34:05.557+03:00  INFO 13452 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T16:34:05.572+03:00  INFO 13452 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15T16:35:25.319+03:00  INFO 2528 --- [blog] [main] com.creswave.blog.BlogApplication        : Starting BlogApplication using Java 21.0.2 with PID 2528 (C:\Users\PC\Desktop\SBOOT\blog\target\classes started by PC in C:\Users\PC\Desktop\SBOOT\blog)
+2024-03-15T16:35:25.323+03:00  INFO 2528 --- [blog] [main] com.creswave.blog.BlogApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T16:35:27.084+03:00  INFO 2528 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T16:35:27.240+03:00  INFO 2528 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 3 JPA repository interfaces.
+2024-03-15T16:35:28.100+03:00  INFO 2528 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T16:35:28.117+03:00  INFO 2528 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T16:35:28.118+03:00  INFO 2528 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T16:35:28.231+03:00  INFO 2528 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15T16:35:28.232+03:00  INFO 2528 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2806 ms
+2024-03-15T16:35:28.981+03:00  INFO 2528 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T16:35:29.023+03:00  INFO 2528 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T16:35:29.182+03:00  INFO 2528 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7afb9c93
+2024-03-15T16:35:29.185+03:00  INFO 2528 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T16:35:31.087+03:00  INFO 2528 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:35:31.888+03:00  WARN 2528 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T16:35:32.129+03:00 DEBUG 2528 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-03-15T16:35:33.345+03:00 DEBUG 2528 --- [blog] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-03-15T16:35:33.397+03:00  INFO 2528 --- [blog] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b2114ce, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bab8290, org.springframework.security.web.context.SecurityContextHolderFilter@57fb6900, org.springframework.security.web.header.HeaderWriterFilter@1ac30be4, org.springframework.web.filter.CorsFilter@4a985388, org.springframework.security.web.authentication.logout.LogoutFilter@359fd0a2, com.creswave.blog.config.JWTAuthenticationFilter@4f3e65f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f0751b0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3984e2b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15c8b75c, org.springframework.security.web.session.SessionManagementFilter@1e9afe4e, org.springframework.security.web.access.ExceptionTranslationFilter@715523b8, org.springframework.security.web.access.intercept.AuthorizationFilter@7ec5d3e1]
+2024-03-15T16:35:33.511+03:00 DEBUG 2528 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15T16:35:33.567+03:00 DEBUG 2528 --- [blog] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15T16:35:33.932+03:00  INFO 2528 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-15T16:35:33.946+03:00  INFO 2528 --- [blog] [main] com.creswave.blog.BlogApplication        : Started BlogApplication in 9.377 seconds (process running for 10.633)
+2024-03-15T16:35:41.588+03:00  INFO 2528 --- [blog] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T16:35:41.589+03:00  INFO 2528 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T16:35:41.589+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15T16:35:41.589+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15T16:35:41.590+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15T16:35:41.592+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@689fe2a3
+2024-03-15T16:35:41.593+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1ab780fd
+2024-03-15T16:35:41.593+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15T16:35:41.593+03:00  INFO 2528 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-03-15T16:35:41.638+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/signin", parameters={}
+2024-03-15T16:35:41.640+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.AuthenticationController#signin(SignInRequest)
+2024-03-15T16:35:41.746+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignInRequest(email=admin@gmail.com, password=admin)]
+2024-03-15T16:35:42.175+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:35:42.176+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [JwtAuthenticationResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA (truncated)...]
+2024-03-15T16:35:42.189+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:35:56.457+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/1", parameters={}
+2024-03-15T16:35:56.458+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long)
+2024-03-15T16:35:56.515+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:35:56.515+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PostResponse(id=null, title=null, body=null, message=null)]
+2024-03-15T16:35:56.518+03:00 DEBUG 2528 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:38:32.009+03:00  INFO 2528 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:38:32.014+03:00  INFO 2528 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T16:38:32.027+03:00  INFO 2528 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15T16:38:40.731+03:00  INFO 9736 --- [blog] [main] com.creswave.blog.BlogApplication        : Starting BlogApplication using Java 21.0.2 with PID 9736 (C:\Users\PC\Desktop\SBOOT\blog\target\classes started by PC in C:\Users\PC\Desktop\SBOOT\blog)
+2024-03-15T16:38:40.734+03:00  INFO 9736 --- [blog] [main] com.creswave.blog.BlogApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T16:38:42.137+03:00  INFO 9736 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T16:38:42.251+03:00  INFO 9736 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 3 JPA repository interfaces.
+2024-03-15T16:38:42.966+03:00  INFO 9736 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T16:38:42.982+03:00  INFO 9736 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T16:38:42.982+03:00  INFO 9736 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T16:38:43.108+03:00  INFO 9736 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15T16:38:43.109+03:00  INFO 9736 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2279 ms
+2024-03-15T16:38:43.754+03:00  INFO 9736 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T16:38:43.788+03:00  INFO 9736 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T16:38:43.938+03:00  INFO 9736 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@243c4346
+2024-03-15T16:38:43.941+03:00  INFO 9736 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T16:38:45.627+03:00  INFO 9736 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:38:46.327+03:00  WARN 9736 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T16:38:46.571+03:00 DEBUG 9736 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-03-15T16:38:47.686+03:00 DEBUG 9736 --- [blog] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-03-15T16:38:47.739+03:00  INFO 9736 --- [blog] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1174ff02, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1978eab7, org.springframework.security.web.context.SecurityContextHolderFilter@7f82a71f, org.springframework.security.web.header.HeaderWriterFilter@6a887649, org.springframework.web.filter.CorsFilter@49dacc93, org.springframework.security.web.authentication.logout.LogoutFilter@2c56e044, com.creswave.blog.config.JWTAuthenticationFilter@6b35b0f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64821706, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8aa3013, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@dd025d9, org.springframework.security.web.session.SessionManagementFilter@3f0751b0, org.springframework.security.web.access.ExceptionTranslationFilter@4a2f1ae3, org.springframework.security.web.access.intercept.AuthorizationFilter@4a985388]
+2024-03-15T16:38:47.861+03:00 DEBUG 9736 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15T16:38:47.922+03:00 DEBUG 9736 --- [blog] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15T16:38:48.290+03:00  INFO 9736 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-15T16:38:48.303+03:00  INFO 9736 --- [blog] [main] com.creswave.blog.BlogApplication        : Started BlogApplication in 8.339 seconds (process running for 9.603)
+2024-03-15T16:38:55.573+03:00  INFO 9736 --- [blog] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T16:38:55.574+03:00  INFO 9736 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T16:38:55.574+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15T16:38:55.574+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15T16:38:55.575+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15T16:38:55.576+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6e818345
+2024-03-15T16:38:55.576+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@624268ab
+2024-03-15T16:38:55.577+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15T16:38:55.577+03:00  INFO 9736 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-03-15T16:38:55.612+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/signin", parameters={}
+2024-03-15T16:38:55.616+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.AuthenticationController#signin(SignInRequest)
+2024-03-15T16:38:55.717+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignInRequest(email=admin@gmail.com, password=admin)]
+2024-03-15T16:38:56.122+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:38:56.123+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [JwtAuthenticationResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA (truncated)...]
+2024-03-15T16:38:56.136+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:39:15.857+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/1", parameters={}
+2024-03-15T16:39:15.858+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long)
+2024-03-15T16:39:15.908+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:39:15.908+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PostResponse(id=null, title=null, body=null, message=null)]
+2024-03-15T16:39:15.911+03:00 DEBUG 9736 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:52:41.659+03:00  INFO 9736 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:52:41.666+03:00  INFO 9736 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T16:52:41.690+03:00  INFO 9736 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15T16:52:52.185+03:00  INFO 12396 --- [blog] [main] com.creswave.blog.BlogApplication        : Starting BlogApplication using Java 21.0.2 with PID 12396 (C:\Users\PC\Desktop\SBOOT\blog\target\classes started by PC in C:\Users\PC\Desktop\SBOOT\blog)
+2024-03-15T16:52:52.190+03:00  INFO 12396 --- [blog] [main] com.creswave.blog.BlogApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T16:52:53.632+03:00  INFO 12396 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T16:52:53.752+03:00  INFO 12396 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 3 JPA repository interfaces.
+2024-03-15T16:52:54.474+03:00  INFO 12396 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T16:52:54.490+03:00  INFO 12396 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T16:52:54.490+03:00  INFO 12396 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T16:52:54.573+03:00  INFO 12396 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15T16:52:54.574+03:00  INFO 12396 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2276 ms
+2024-03-15T16:52:55.207+03:00  INFO 12396 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T16:52:55.243+03:00  INFO 12396 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T16:52:55.396+03:00  INFO 12396 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a9bce99
+2024-03-15T16:52:55.398+03:00  INFO 12396 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T16:52:57.084+03:00  INFO 12396 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:52:57.803+03:00  WARN 12396 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T16:52:58.046+03:00 DEBUG 12396 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-03-15T16:52:59.151+03:00 DEBUG 12396 --- [blog] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-03-15T16:52:59.206+03:00  INFO 12396 --- [blog] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49dacc93, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dd025d9, org.springframework.security.web.context.SecurityContextHolderFilter@64821706, org.springframework.security.web.header.HeaderWriterFilter@27ada0e8, org.springframework.web.filter.CorsFilter@3bea478e, org.springframework.security.web.authentication.logout.LogoutFilter@153cf928, com.creswave.blog.config.JWTAuthenticationFilter@3e7ddb7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@627ad446, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77feca04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65192f16, org.springframework.security.web.session.SessionManagementFilter@35bb3fea, org.springframework.security.web.access.ExceptionTranslationFilter@6a887649, org.springframework.security.web.access.intercept.AuthorizationFilter@26fc464f]
+2024-03-15T16:52:59.321+03:00 DEBUG 12396 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15T16:52:59.378+03:00 DEBUG 12396 --- [blog] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15T16:52:59.725+03:00  INFO 12396 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-15T16:52:59.738+03:00  INFO 12396 --- [blog] [main] com.creswave.blog.BlogApplication        : Started BlogApplication in 8.285 seconds (process running for 9.57)
+2024-03-15T16:53:13.613+03:00  INFO 12396 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T16:53:13.613+03:00  INFO 12396 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T16:53:13.614+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15T16:53:13.614+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15T16:53:13.614+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15T16:53:13.616+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@a6924ad
+2024-03-15T16:53:13.616+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2a3c3a04
+2024-03-15T16:53:13.617+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15T16:53:13.617+03:00  INFO 12396 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-03-15T16:53:13.656+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/signin", parameters={}
+2024-03-15T16:53:13.660+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.AuthenticationController#signin(SignInRequest)
+2024-03-15T16:53:13.760+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignInRequest(email=admin@gmail.com, password=admin)]
+2024-03-15T16:53:14.190+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:53:14.191+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [JwtAuthenticationResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA (truncated)...]
+2024-03-15T16:53:14.203+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:53:26.807+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/1", parameters={}
+2024-03-15T16:53:26.808+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long, Integer, Integer)
+2024-03-15T16:53:26.852+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:53:26.873+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PagedResponse(content=[Post(id=1, title=Food Farming, body=Food farming in Kenya is a very important (truncated)...]
+2024-03-15T16:53:26.884+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:53:34.279+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostById/2", parameters={}
+2024-03-15T16:53:34.281+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostById(Long, Integer, Integer)
+2024-03-15T16:53:34.287+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:53:34.289+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PagedResponse(content=[Post(id=2, title=Food Farming2, body=22222Food farming in Kenya is a very imp (truncated)...]
+2024-03-15T16:53:34.291+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T16:53:55.172+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/posts/getPostsByUserId/1", parameters={}
+2024-03-15T16:53:55.173+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#getPostsByUserId(Long, Integer, Integer)
+2024-03-15T16:53:55.206+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T16:53:55.209+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PagedResponse(content=[Post(id=2, title=Food Farming2, body=22222Food farming in Kenya is a very imp (truncated)...]
+2024-03-15T16:53:55.210+03:00 DEBUG 12396 --- [blog] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T17:03:59.002+03:00  INFO 12396 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T17:03:59.005+03:00  INFO 12396 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T17:03:59.019+03:00  INFO 12396 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15T17:04:07.739+03:00  INFO 6616 --- [blog] [main] com.creswave.blog.BlogApplication        : Starting BlogApplication using Java 21.0.2 with PID 6616 (C:\Users\PC\Desktop\SBOOT\blog\target\classes started by PC in C:\Users\PC\Desktop\SBOOT\blog)
+2024-03-15T17:04:07.743+03:00  INFO 6616 --- [blog] [main] com.creswave.blog.BlogApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T17:04:09.224+03:00  INFO 6616 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T17:04:09.340+03:00  INFO 6616 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 3 JPA repository interfaces.
+2024-03-15T17:04:10.070+03:00  INFO 6616 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T17:04:10.087+03:00  INFO 6616 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T17:04:10.088+03:00  INFO 6616 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T17:04:10.173+03:00  INFO 6616 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15T17:04:10.173+03:00  INFO 6616 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2338 ms
+2024-03-15T17:04:10.833+03:00  INFO 6616 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T17:04:10.868+03:00  INFO 6616 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T17:04:11.021+03:00  INFO 6616 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@38a96593
+2024-03-15T17:04:11.023+03:00  INFO 6616 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T17:04:12.811+03:00  INFO 6616 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T17:04:13.530+03:00  WARN 6616 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T17:04:13.773+03:00 DEBUG 6616 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 22 mappings in 'requestMappingHandlerMapping'
+2024-03-15T17:04:14.913+03:00 DEBUG 6616 --- [blog] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-03-15T17:04:14.963+03:00  INFO 6616 --- [blog] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b2114ce, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bab8290, org.springframework.security.web.context.SecurityContextHolderFilter@57fb6900, org.springframework.security.web.header.HeaderWriterFilter@1ac30be4, org.springframework.web.filter.CorsFilter@4a985388, org.springframework.security.web.authentication.logout.LogoutFilter@359fd0a2, com.creswave.blog.config.JWTAuthenticationFilter@4af6839c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f0751b0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3984e2b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15c8b75c, org.springframework.security.web.session.SessionManagementFilter@1e9afe4e, org.springframework.security.web.access.ExceptionTranslationFilter@715523b8, org.springframework.security.web.access.intercept.AuthorizationFilter@7ec5d3e1]
+2024-03-15T17:04:15.079+03:00 DEBUG 6616 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15T17:04:15.136+03:00 DEBUG 6616 --- [blog] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15T17:04:15.478+03:00  INFO 6616 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-15T17:04:15.491+03:00  INFO 6616 --- [blog] [main] com.creswave.blog.BlogApplication        : Started BlogApplication in 8.514 seconds (process running for 9.779)
+2024-03-15T17:04:34.121+03:00  INFO 6616 --- [blog] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T17:04:34.121+03:00  INFO 6616 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T17:04:34.121+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15T17:04:34.122+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15T17:04:34.122+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15T17:04:34.124+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5257123d
+2024-03-15T17:04:34.124+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6b8683b8
+2024-03-15T17:04:34.125+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15T17:04:34.125+03:00  INFO 6616 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-03-15T17:04:34.161+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/signin", parameters={}
+2024-03-15T17:04:34.164+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.AuthenticationController#signin(SignInRequest)
+2024-03-15T17:04:34.266+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignInRequest(email=admin@gmail.com, password=admin)]
+2024-03-15T17:04:34.660+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T17:04:34.661+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [JwtAuthenticationResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA (truncated)...]
+2024-03-15T17:04:34.673+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T17:06:41.337+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : PUT "/api/posts/updatePost/2", parameters={}
+2024-03-15T17:06:41.338+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#updatePost(Long, PostRequest)
+2024-03-15T17:06:41.346+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [PostRequest(title=Updated Title, body=Updated body content)]
+2024-03-15T17:06:41.629+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T17:06:41.630+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [PostResponse(id=null, title=null, body=null, message=null)]
+2024-03-15T17:06:41.633+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T17:13:54.983+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : DELETE "/api/posts/deletePost/2", parameters={}
+2024-03-15T17:13:54.984+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#deletePost(Long)
+2024-03-15T17:13:55.066+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2024-03-15T17:13:55.067+03:00 DEBUG 6616 --- [blog] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T19:02:29.924+03:00  WARN 6616 --- [blog] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h46m18s600ms643µs1ns).
+2024-03-15T19:28:10.684+03:00  INFO 6616 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T19:28:10.727+03:00  INFO 6616 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T19:28:10.756+03:00  INFO 6616 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15T19:28:36.195+03:00  INFO 12936 --- [blog] [main] com.creswave.blog.BlogApplication        : Starting BlogApplication using Java 21.0.2 with PID 12936 (C:\Users\PC\Desktop\SBOOT\blog\target\classes started by PC in C:\Users\PC\Desktop\SBOOT\blog)
+2024-03-15T19:28:36.198+03:00  INFO 12936 --- [blog] [main] com.creswave.blog.BlogApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T19:28:39.048+03:00  INFO 12936 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T19:28:39.268+03:00  INFO 12936 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 186 ms. Found 3 JPA repository interfaces.
+2024-03-15T19:28:41.473+03:00  INFO 12936 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T19:28:41.510+03:00  INFO 12936 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T19:28:41.510+03:00  INFO 12936 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T19:28:41.717+03:00  INFO 12936 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15T19:28:41.718+03:00  INFO 12936 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5458 ms
+2024-03-15T19:28:44.721+03:00  INFO 12936 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T19:28:45.084+03:00  INFO 12936 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T19:28:45.281+03:00  INFO 12936 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@184de357
+2024-03-15T19:28:45.284+03:00  INFO 12936 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T19:28:49.598+03:00  INFO 12936 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T19:28:50.743+03:00  WARN 12936 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T19:28:51.004+03:00 DEBUG 12936 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 22 mappings in 'requestMappingHandlerMapping'
+2024-03-15T19:28:52.290+03:00 DEBUG 12936 --- [blog] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-03-15T19:28:52.344+03:00  INFO 12936 --- [blog] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7da59f6e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fb8d720, org.springframework.security.web.context.SecurityContextHolderFilter@19a544cd, org.springframework.security.web.header.HeaderWriterFilter@4a985388, org.springframework.web.filter.CorsFilter@21b792c2, org.springframework.security.web.authentication.logout.LogoutFilter@7ccfed46, com.creswave.blog.config.JWTAuthenticationFilter@d43f205, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58c93be3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dd62f07, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6202f8bf, org.springframework.security.web.session.SessionManagementFilter@3338d706, org.springframework.security.web.access.ExceptionTranslationFilter@3b2114ce, org.springframework.security.web.access.intercept.AuthorizationFilter@505a48a2]
+2024-03-15T19:28:52.462+03:00 DEBUG 12936 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15T19:28:52.571+03:00 DEBUG 12936 --- [blog] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15T19:28:52.993+03:00  INFO 12936 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-15T19:28:53.005+03:00  INFO 12936 --- [blog] [main] com.creswave.blog.BlogApplication        : Started BlogApplication in 18.229 seconds (process running for 23.427)
+2024-03-15T19:30:07.499+03:00  INFO 12936 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T19:30:07.499+03:00  INFO 12936 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T19:30:07.500+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15T19:30:07.500+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15T19:30:07.500+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15T19:30:07.502+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@13f358f8
+2024-03-15T19:30:07.502+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3d3c14c3
+2024-03-15T19:30:07.502+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15T19:30:07.503+03:00  INFO 12936 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-03-15T19:30:07.537+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/signin", parameters={}
+2024-03-15T19:30:07.540+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.AuthenticationController#signin(SignInRequest)
+2024-03-15T19:30:07.640+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignInRequest(email=admin@gmail.com, password=admin)]
+2024-03-15T19:30:08.015+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T19:30:08.016+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [JwtAuthenticationResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA (truncated)...]
+2024-03-15T19:30:08.025+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T19:30:55.529+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : PUT "/api/posts/updatePost/2", parameters={}
+2024-03-15T19:30:55.530+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#updatePost(Long, PostRequest)
+2024-03-15T19:30:55.537+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [PostRequest(title=Updated Title, body=Updated body content)]
+2024-03-15T19:30:55.681+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-03-15T19:30:55.681+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Post successfully updated"]
+2024-03-15T19:30:55.684+03:00 DEBUG 12936 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T19:34:56.535+03:00  INFO 12936 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T19:34:56.538+03:00  INFO 12936 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T19:34:56.554+03:00  INFO 12936 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15T19:35:05.134+03:00  INFO 11276 --- [blog] [main] com.creswave.blog.BlogApplication        : Starting BlogApplication using Java 21.0.2 with PID 11276 (C:\Users\PC\Desktop\SBOOT\blog\target\classes started by PC in C:\Users\PC\Desktop\SBOOT\blog)
+2024-03-15T19:35:05.138+03:00  INFO 11276 --- [blog] [main] com.creswave.blog.BlogApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T19:35:06.561+03:00  INFO 11276 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T19:35:06.674+03:00  INFO 11276 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 3 JPA repository interfaces.
+2024-03-15T19:35:07.390+03:00  INFO 11276 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T19:35:07.404+03:00  INFO 11276 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T19:35:07.405+03:00  INFO 11276 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T19:35:07.490+03:00  INFO 11276 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15T19:35:07.491+03:00  INFO 11276 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2257 ms
+2024-03-15T19:35:08.126+03:00  INFO 11276 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T19:35:08.160+03:00  INFO 11276 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T19:35:08.317+03:00  INFO 11276 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a5e8260
+2024-03-15T19:35:08.320+03:00  INFO 11276 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T19:35:09.998+03:00  INFO 11276 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T19:35:10.725+03:00  WARN 11276 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T19:35:10.963+03:00 DEBUG 11276 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 22 mappings in 'requestMappingHandlerMapping'
+2024-03-15T19:35:12.085+03:00 DEBUG 11276 --- [blog] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-03-15T19:35:12.139+03:00  INFO 11276 --- [blog] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49dacc93, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dd025d9, org.springframework.security.web.context.SecurityContextHolderFilter@64821706, org.springframework.security.web.header.HeaderWriterFilter@27ada0e8, org.springframework.web.filter.CorsFilter@3bea478e, org.springframework.security.web.authentication.logout.LogoutFilter@153cf928, com.creswave.blog.config.JWTAuthenticationFilter@1822a61b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@627ad446, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77feca04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65192f16, org.springframework.security.web.session.SessionManagementFilter@35bb3fea, org.springframework.security.web.access.ExceptionTranslationFilter@6a887649, org.springframework.security.web.access.intercept.AuthorizationFilter@26fc464f]
+2024-03-15T19:35:12.257+03:00 DEBUG 11276 --- [blog] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15T19:35:12.312+03:00 DEBUG 11276 --- [blog] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15T19:35:12.653+03:00  INFO 11276 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-15T19:35:12.666+03:00  INFO 11276 --- [blog] [main] com.creswave.blog.BlogApplication        : Started BlogApplication in 8.289 seconds (process running for 9.658)
+2024-03-15T19:35:24.323+03:00  INFO 11276 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T19:35:24.323+03:00  INFO 11276 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T19:35:24.324+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15T19:35:24.324+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15T19:35:24.324+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15T19:35:24.325+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6e2e11ee
+2024-03-15T19:35:24.326+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@137db13f
+2024-03-15T19:35:24.326+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15T19:35:24.326+03:00  INFO 11276 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-15T19:35:24.363+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/signin", parameters={}
+2024-03-15T19:35:24.365+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.AuthenticationController#signin(SignInRequest)
+2024-03-15T19:35:24.464+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [SignInRequest(email=admin@gmail.com, password=admin)]
+2024-03-15T19:35:24.851+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T19:35:24.853+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [JwtAuthenticationResponse(token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA (truncated)...]
+2024-03-15T19:35:24.864+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T19:35:39.570+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : PUT "/api/posts/updatePost/2", parameters={}
+2024-03-15T19:35:39.572+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#updatePost(Long, PostRequest)
+2024-03-15T19:35:39.578+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [PostRequest(title=Updated Title, body=Updated body content)]
+2024-03-15T19:35:39.644+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T19:35:39.644+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Post successfully updated}]
+2024-03-15T19:35:39.647+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T19:37:07.422+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : DELETE "/api/posts/deletePost/2", parameters={}
+2024-03-15T19:37:07.424+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.creswave.blog.controller.PostController#deletePost(Long)
+2024-03-15T19:37:07.489+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-03-15T19:37:07.490+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Post record successfully deleted}]
+2024-03-15T19:37:07.493+03:00 DEBUG 11276 --- [blog] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15T19:37:44.102+03:00  INFO 11276 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T19:37:44.104+03:00  INFO 11276 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T19:37:44.121+03:00  INFO 11276 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
