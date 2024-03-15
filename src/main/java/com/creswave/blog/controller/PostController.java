@@ -105,4 +105,19 @@ public class PostController {
 		return ResponseEntity.ok(responseBody);
 	}
 
+
+	@GetMapping("/search")
+	@PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
+	public ResponseEntity<PagedResponse<Post>> searchPosts(
+			@RequestParam(value = "searchTerm") String searchTerm,
+			@RequestParam(value = "page", required = false, defaultValue = AppConstants.DEFAULT_PAGE_NUMBER) Integer page,
+			@RequestParam(value = "size", required = false, defaultValue = AppConstants.DEFAULT_PAGE_SIZE) Integer size) {
+
+		logger.debug("Called PostController.searchPosts");
+
+		PagedResponse<Post> response = postService.searchPosts(searchTerm, page, size);
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+
+
 }

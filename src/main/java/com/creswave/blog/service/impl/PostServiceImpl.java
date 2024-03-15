@@ -114,6 +114,24 @@ public class PostServiceImpl implements PostService {
 		return new PostResponse(updatedPost.getTitle(), updatedPost.getBody(), "Post updated successfully");
 	}
 
+
+	//search blog
+	@Override
+	public PagedResponse<Post> searchPosts(String searchTerm, int page, int size) {
+		validatePageNumberAndSize(page, size);
+
+		Pageable pageable = PageRequest.of(page, size, Sort.Direction.DESC, CREATED_AT);
+
+		Page<Post> posts = postRepository.findByTitleContainingOrBodyContaining(searchTerm, searchTerm, pageable);
+
+		List<Post> content = posts.getNumberOfElements() == 0 ? Collections.emptyList() : posts.getContent();
+
+		return new PagedResponse<>(content, posts.getNumber(), posts.getSize(), posts.getTotalElements(),
+				posts.getTotalPages(), posts.isLast());
+	}
+
+
+
 	//delete a post
 	@Override
 	public void deletePost(Long postId) {

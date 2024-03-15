@@ -17,4 +17,6 @@ public interface PostService {
 	PostResponse updatePost(Long postId, PostRequest postRequest);
 
 	void deletePost(Long postId);
+
+	PagedResponse<Post> searchPosts(String searchTerm, int page, int size);
 }
