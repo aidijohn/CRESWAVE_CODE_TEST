@@ -11,4 +11,8 @@ public class CommentResponse {
 
     private String body;
     private LocalDateTime createdAt;
+
+    public CommentResponse() {
+
+    }
 }
