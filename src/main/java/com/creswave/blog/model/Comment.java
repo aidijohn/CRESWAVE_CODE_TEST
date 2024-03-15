@@ -23,17 +23,6 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
-    @NotBlank
-    @Size(min = 4, max = 50)
-    private String name;
-
-    @Column(name = "email")
-    @NotBlank
-    @Email
-    @Size(min = 4, max = 50)
-    private String email;
-
     @Column(name = "body")
     @NotBlank
     @Size(min = 10, message = "Comment body must be minimum 10 characters")
