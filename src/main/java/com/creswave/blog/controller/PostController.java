@@ -30,12 +30,14 @@ public class PostController {
 
 	@PostMapping("/addPost")
 	@PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
-	public ResponseEntity<PostResponse> addPost(@Valid @RequestBody PostRequest postRequest, @RequestParam("user_id") Long userId) {
+	public ResponseEntity<Map<String, String>> addPost(@Valid @RequestBody PostRequest postRequest, @RequestParam("user_id") Long userId) {
 		PostResponse response = postService.addPost(postRequest, userId);
 
 		logger.debug("Called PostController.addPost");
 
-		return new ResponseEntity<>(response, HttpStatus.CREATED);
+		Map<String, String> responseBody = new HashMap<>();
+		responseBody.put("message", "New Post successfully created");
+		return new ResponseEntity<>(responseBody, HttpStatus.CREATED);
 	}
 
 	@GetMapping("/getAllPosts")

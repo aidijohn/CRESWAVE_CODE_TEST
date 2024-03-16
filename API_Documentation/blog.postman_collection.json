@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "5ea2524e-8bfa-49ca-b247-42aa18642f04",
-		"name": "blog",
+		"_postman_id": "73f210a7-9290-4e7d-9266-5e5229521e94",
+		"name": "blog Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "23301711",
-		"_collection_link": "https://lively-crater-247989.postman.co/workspace/restServer~6cc2f409-9392-4893-b0ab-76c29761057b/collection/23301711-5ea2524e-8bfa-49ca-b247-42aa18642f04?action=share&source=collection_link&creator=23301711"
+		"_collection_link": "https://lively-crater-247989.postman.co/workspace/restServer~6cc2f409-9392-4893-b0ab-76c29761057b/collection/23301711-73f210a7-9290-4e7d-9266-5e5229521e94?action=share&source=collection_link&creator=23301711"
 	},
 	"item": [
 		{
@@ -65,7 +65,7 @@
 			"response": []
 		},
 		{
-			"name": "getAdmin",
+			"name": "getAllUsers",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -73,7 +73,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTAzOTk4OTMsImV4cCI6MjQ2Mjk3NTg0NjQ2NTc2MH0._tO8GjnPmX9XluB9BtvuyYjQUOMLT5rshpcRfXChzts"
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA1NDg0MTAsImV4cCI6MjQ2MzE4OTcxMTc2OTQ0MH0.KevOA_krYtLfzhHAnFWjLArPd6eUMNJVoExXVMWawd8"
 					}
 				},
 				"method": "GET",
@@ -87,90 +87,36 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/api/v1/admin"
-			},
-			"response": []
-		},
-		{
-			"name": "getUser",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYW1lc0BnbWFpbC5jb20iLCJpYXQiOjE3MTA0MDA2NDMsImV4cCI6MjQ2Mjk3NjkyNjE1NjE2MH0.76MWINKhSrYJWTfjw6UwWCvhUPYSwj1oXwsZLYHlGio"
-					}
-				},
-				"method": "GET",
-				"header": [],
-				"url": "http://localhost:8080/api/v1/user"
-			},
-			"response": []
-		},
-		{
-			"name": "update user",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYW1lc0BnbWFpbC5jb20iLCJpYXQiOjE3MTA0MjI5ODMsImV4cCI6MjQ2MzAwOTA5Njg2MjA4MH0.ksgSmRl3vTqoqhmyV7p0ipxvErd7qnemEdN57oHerIs"
-					}
-				},
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"firstname\": \"Jamess\",\r\n    \"secondname\": \"Omondi\",\r\n    \"email\": \"jamess@gmail.com\",\r\n    \"password\": \"user2\"\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "http://localhost:8080/api/v1/user/5"
+				"url": "http://localhost:8080/api/v1/admin/users"
 			},
 			"response": []
 		},
 		{
 			"name": "getUserById",
 			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/admin/user/1"
+			},
+			"response": []
+		},
+		{
+			"name": "add new post",
+			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA0ODE1NDIsImV4cCI6MjQ2MzA5MzQyMTQyNzUyMH0.iD6SFaFwzSDfb6_G077d_pWoEer0XM1m8P3499aeMd8"
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA1NTA0ODksImV4cCI6MjQ2MzE5MjcwNDg2ODQ4MH0.n1PfEEuLTWSlW81IxLSHpdT5XuUoxYIsN7lHjzGo_5Y"
 					}
 				},
 				"method": "POST",
 				"header": [
 					{
-						"key": "id",
-						"value": "5",
+						"key": "user_id",
+						"value": "1",
 						"type": "text"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "http://localhost:8080/api/v1/admin/getUserByID"
-			},
-			"response": []
-		},
-		{
-			"name": "add post",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA1MDU1ODUsImV4cCI6MjQ2MzEyODA0MjgzNDg4MH0.tAowMBLyGn8RrGTNXm1Mkic3QNPZUOog-TQ3g1bJPLE"
-					}
-				},
-				"method": "POST",
-				"header": [],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"title\": \"Food Farming\",\r\n    \"body\": \"Food farming in Kenya is a very important practice because it helps to sustain the community.\"\r\n}\r\n",
@@ -181,7 +127,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/posts/add?user_id=1",
+					"raw": "http://localhost:8080/api/posts/addPost?user_id=1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -190,7 +136,7 @@
 					"path": [
 						"api",
 						"posts",
-						"add"
+						"addPost"
 					],
 					"query": [
 						{
@@ -205,12 +151,6 @@
 		{
 			"name": "getAllPosts",
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA1MDYzMzMsImV4cCI6MjQ2MzEyOTExOTgzNjgwMH0.x-QHsj64IyFy7MypnL_M6ASL6mYzvHCc63m5BbLeWuE"
-					}
-				},
 				"method": "GET",
 				"header": [],
 				"url": "http://localhost:8080/api/posts/getAllPosts"
@@ -220,12 +160,6 @@
 		{
 			"name": "getPostById",
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA1MTA3OTQsImV4cCI6MjQ2MzEzNTU0MzUzNTY4MH0.OR_QmuY_AgnjI4NxyplA5hzovq82QN2wCky2NUxp5dQ"
-					}
-				},
 				"method": "GET",
 				"header": [],
 				"url": "http://localhost:8080/api/posts/getPostById/2"
@@ -235,12 +169,6 @@
 		{
 			"name": "getPostsByUserId",
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA1MDg1MDMsImV4cCI6MjQ2MzEzMjI0NTYwMzA0MH0.3FplYO3Q_gvUR67UAJcmj0Fx0qcdUUV6Rom3arZw9ko"
-					}
-				},
 				"method": "GET",
 				"header": [],
 				"url": "http://localhost:8080/api/posts/getPostsByUserId/1"
@@ -277,12 +205,6 @@
 		{
 			"name": "addComment",
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3MTA1MzIwOTksImV4cCI6MjQ2MzE2NjIyMjYyOTEyMH0.QQcIs1smXMBdXGJCQ-XUrXyPD3Pv2ZqMJ-ISvCTAOmg"
-					}
-				},
 				"method": "POST",
 				"header": [
 					{
@@ -298,7 +220,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"body\": \"This is a test comment. Hello from Postman!\",\r\n    \"userId\": 1,\r\n    \"postId\": 2\r\n}\r\n\r\n",
+					"raw": "{\r\n    \"body\": \"This is a test comment for post id 1. All is well!\",\r\n    \"userId\": 1,\r\n    \"postId\": 1\r\n}\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -350,7 +272,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8080/api/comments/getCommentById/3"
+				"url": "http://localhost:8080/api/comments/getCommentById/1"
 			},
 			"response": []
 		},
@@ -375,16 +297,10 @@
 		{
 			"name": "searchBlogPost",
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huQGdtYWlsLmNvbSIsImlhdCI6MTcxMDUzODA0NSwiZXhwIjoyNDYzMTc0Nzg0ODA4NjQwfQ.cvyeUji7q35DL2Ju8kXa258KwBFuvJqtAQkjfWT5D9g"
-					}
-				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/posts/search?searchTerm=Food%20Farming%20in%20Kenya&page=0&size=10",
+					"raw": "http://localhost:8080/api/posts/search?searchTerm=Food%20Farming&page=0&size=10",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -398,7 +314,7 @@
 					"query": [
 						{
 							"key": "searchTerm",
-							"value": "Food%20Farming%20in%20Kenya"
+							"value": "Food%20Farming"
 						},
 						{
 							"key": "page",
