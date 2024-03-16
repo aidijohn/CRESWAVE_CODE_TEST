@@ -789,3 +789,44 @@ You may wish to exclude one of them to ensure predictable runtime behavior
 2024-03-16T02:06:29.385+03:00  INFO 8648 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-03-16T02:06:29.386+03:00  INFO 8648 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
 2024-03-16T02:06:29.515+03:00  INFO 8648 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-03-16T02:28:15.711+03:00  INFO 12092 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-16T02:28:15.789+03:00  INFO 12092 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-16T02:28:15.831+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-16T02:28:15.833+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-16T02:28:15.833+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-16T02:28:16.095+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a507ea0
+2024-03-16T02:28:16.096+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5e783f78
+2024-03-16T02:28:16.167+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-16T02:28:16.167+03:00  INFO 12092 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 377 ms
+2024-03-16T02:28:16.804+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2024-03-16T02:28:16.821+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-03-16T02:28:17.192+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-16T02:28:17.724+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-03-16T02:28:17.725+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-03-16T02:28:17.764+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-03-16T02:28:17.764+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-03-16T02:28:17.763+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-03-16T02:28:17.763+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-03-16T02:28:17.765+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-03-16T02:28:17.765+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-03-16T02:28:17.765+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-03-16T02:28:17.765+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-03-16T02:28:17.856+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-16T02:28:17.858+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-16T02:28:17.873+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-16T02:28:18.056+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-16T02:28:18.196+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-16T02:28:19.294+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-03-16T02:28:19.295+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-03-16T02:28:19.298+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-16T02:28:19.343+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-03-16T02:28:19.344+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-03-16T02:28:19.423+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-16T02:28:19.455+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2024-03-16T02:28:19.464+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-16T02:28:19.563+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-03-16T02:28:19.564+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-03-16T02:28:21.497+03:00  INFO 12092 --- [blog] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1721 ms
+2024-03-16T02:28:21.555+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-03-16T02:28:21.559+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2024-03-16T02:28:21.561+03:00 DEBUG 12092 --- [blog] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
